@@ -1,8 +1,8 @@
-{{#with this}}
+{{#each this}}
   <img src='{{flags.svg}}' alt='' width='30px' /><h2>{{name.official}}</h2>
   <ul>
     <li><p>{{capital}}</p></li>
     <li><p>{{population}}</p></li>
-    <li><p>{{languages}}</p></li>
+    <li>{{#each languages }} {{.}}{{#unless @last}},{{/unless}} {{/each}}</li>
   </ul>
-{{/with}}
+{{/each}}
