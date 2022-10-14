@@ -13,11 +13,13 @@ const DEBOUNCE_DELAY = 300;
 fieldRef.addEventListener('input', debounce(onInput, 300));
 
 export function onInput(e) {
-  let searchText = e.target.value;
+  let searchText = e.target.value.toLowerCase();
   console.log(searchText);
 
   fetchCountries().then(data => {
-    console.log(data.filter(item => item.name.official.includes(searchText)));
+    console.log(
+      data.filter(item => item.name.official.toLowerCase().includes(searchText))
+    );
   });
 }
 // InfoRef.insertAdjacentHTML('beforeend', markup(data[0]))
