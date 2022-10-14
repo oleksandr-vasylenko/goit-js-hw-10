@@ -1,3 +1,8 @@
 {{#each this}}
-  <img src='{{flags.svg}}' alt='' width='30px' /><h2>{{name.official}}</h2>
+  <li class='shortListItem'>
+    <div class='shortListFlagBox'>
+      <img class='flag' src='{{flags.svg}}' alt='' />
+    </div>
+    <h2 class='shortMarkupCountry'>{{name.official}}</h2>
+  </li>
 {{/each}}

@@ -12,9 +12,52 @@ body {
   line-height: 1.5;
 }
 
+body {
+  background-color: #f6ebf4;
+}
+
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+
+  border: none;
+  margin: auto;
+  display: block;
+}
+
+.flag {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.shortMarkupCountry {
+  margin-left: 15px;
+}
+
+.country-info {
+}
+
+.country-list {
+}
+
+.shortListItem {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.shortListFlagBox {
+  width: 50px;
+  height: 50px;
+}
+
+.fullMarkupFlagBox {
+  width: 200px;
+  height: 200px;
 }

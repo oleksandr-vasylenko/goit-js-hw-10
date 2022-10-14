@@ -1,8 +1,9 @@
 {{#each this}}
-  <img src='{{flags.svg}}' alt='' width='30px' /><h2>{{name.official}}</h2>
-  <ul>
-    <li><p>{{capital}}</p></li>
-    <li><p>{{population}}</p></li>
-    <li>{{#each languages }} {{.}}{{#unless @last}},{{/unless}} {{/each}}</li>
+  <div class="fullMarkupFlagBox"><img class='flag' src='{{flags.svg}}' alt='' /></div>
+  <h2 class="fullMarkupCountry">{{name.official}}</h2>
+  <ul class="fulltList">
+    <li class="fullMarkupItem"><p>{{capital}}</p></li>
+    <li class="fullMarkupItem"><p>{{population}}</p></li>
+    <li class="fullMarkupItem">{{#each languages }} {{.}}{{#unless @last}},{{/unless}} {{/each}}</li>
   </ul>
 {{/each}}
