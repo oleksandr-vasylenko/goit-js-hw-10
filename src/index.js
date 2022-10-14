@@ -6,10 +6,11 @@ const fieldRef = document.querySelector('#search-box');
 const listRef = document.querySelector('.country-list');
 const infoRef = document.querySelector('.country-info');
 
-fieldRef = addEventListener('input', onInput);
+fieldRef.addEventListener('input', onInput);
 
 function onInput(e) {
   let searchText = e.target.value;
+  console.log(searchText);
 
   function fetchCountries() {
     fetch(`https://restcountries.com/v3.1/name/${searchText}`)
