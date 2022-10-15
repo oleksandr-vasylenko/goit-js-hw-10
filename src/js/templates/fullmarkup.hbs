@@ -1,9 +1,11 @@
 {{#each this}}
-  <div class="fullMarkupFlagBox"><img class='flag' src='{{flags.svg}}' alt='' /></div>
+<div class="countryCard">
+  <div class="fullMarkupFlagBox"><img class='fullMarkupflag' src='{{flags.svg}}' alt='' /></div>
   <h2 class="fullMarkupCountry">{{name.official}}</h2>
   <ul class="fulltList">
-    <li class="fullMarkupItem"><p>{{capital}}</p></li>
-    <li class="fullMarkupItem"><p>{{population}}</p></li>
-    <li class="fullMarkupItem">{{#each languages }} {{.}}{{#unless @last}},{{/unless}} {{/each}}</li>
+    <li class="fullMarkupItem"><p class="cardParam">Capital: <span class="info">{{capital}}</span></p></li>
+    <li class="fullMarkupItem"><p class="cardParam">Population: <span class="info">{{population}}</span></p></li>
+    <li class="fullMarkupItem"><p class="cardParam">Languages:<span class="info">{{#each languages }} {{.}}{{#unless @last}},{{/unless}} {{/each}}</span></p></li>
   </ul>
+  </div>
 {{/each}}
