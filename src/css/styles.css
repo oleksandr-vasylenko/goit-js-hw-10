@@ -19,10 +19,12 @@ body {
 #search-box {
   font: inherit;
   padding: 8px;
+  padding-left: 15px;
   max-width: 320px;
   margin-bottom: 16px;
   border: none;
   border-radius: 20px;
+  display: block;
 }
 
 .fullMarkupflag {
@@ -42,11 +44,13 @@ body {
 }
 
 .shortMarkupCountry {
-  margin-left: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0px;
   color: #333232;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .countryCard {
@@ -58,20 +62,21 @@ body {
 
 .country-list {
   padding-left: 0;
+  display: inline-block;
 }
 
 .shortListItem {
-  display: inline-block;
-  align-items: center;
   display: flex;
+  align-items: center;
   list-style: none;
   margin-bottom: 10px;
-  padding-left: 15px;
+  padding: 15px;
   background-color: #ffffff;
   border-radius: 10px;
 }
 
 .shortListFlagBox {
+  display: inline-block;
   max-width: 50px;
   max-height: 50px;
 }
