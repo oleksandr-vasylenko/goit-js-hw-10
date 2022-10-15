@@ -58,6 +58,7 @@ body {
   padding: 15px;
   border-radius: 20px;
   display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .country-list {
@@ -73,6 +74,7 @@ body {
   padding: 15px;
   background-color: #ffffff;
   border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .shortListFlagBox {
